@@ -1,0 +1,50 @@
+/*this css is from the shuffle tutorial at https://www.hungred.com/how-to/tutorial-shuffle-effect-jquery/ */
+/*i've set the width of the cards manually but there is no doubt a better way to do it!  */
+
+.card {
+    width: 100%; /* Takes full width of its parent, i.e., .card-container */
+    height: 100%; /* Takes full height of its parent */
+    background-color: #e3e3e3;
+    position: absolute;
+    top: 500;
+    left: 0;
+    z-index: 0; /* Initially all cards are at the same z-index */
+    box-sizing: border-box; /* This ensures padding and border are included in the total width/height */
+    overflow: hidden; /* This ensures content inside the card does not overflow */
+}
+
+/* Add any other styling rules you need for your cards here. */
+
+body{
+    margin: 0 auto;					/*align the header at the center*/
+    text-align: center;				/*align the header at the center*/
+    }
+    
+    
+    div.card
+    {
+    width: 25em;					/* width of each container*/
+    height: 45em;					/* height of each container*/
+    position: absolute;				/* instructure each container to obey the position absolutely*/
+    float: left;					/* float all the container so that they overlapped each other*/
+    left: 30%;	
+    top:10%;					/* align them to the center of the screen */
+    border: #000 solid 10px;		/* give it a border to make it look nice*/
+    }
+    
+    div#box1
+    {
+    background-color: #66A666;/*green*/
+    }
+    div#box2
+    {
+    background-color: #E37373;/*pink*/
+    }
+    div#box3
+    {
+    background-color: #B2B2B2;/*grey*/
+    }
+    div#box4
+    {
+    background-color: #A51515;/*red*/
+    }

@@ -1,0 +1,119 @@
+/* glowing
+from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text
+*/
+
+.glow {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue, 0 0 80px blue;
+    }
+  }
+
+/* second glowing class for the small print fun */
+
+.glow2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px lightgray, 0 0 20px lightgray, 0 0 30px lightgray, 0 0 40px lightgray, 0 0 50px lightgray, 0 0 60px lightgray, 0 0 70px lightgray;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 80px orange;
+    }
+  }
+
+
+
+
+
+
+
+
+/* various others */
+
+  .table-responsive {
+    overflow-x: auto;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: purple;
+}
+
+.table-sm td,
+.table-sm th {
+    padding: 0.3rem;
+}
+
+.table-formatting {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+.table-formatting th,
+.table-formatting td {
+    border: 1px solid lightgray;
+    padding: 0.8rem;
+    text-align: left;
+    font-family: Special Elite;
+}
+
+.table-formatting th {
+    font-size:16pt;
+}
+/*as the cells are being done individually, need to apply the style to each <th> element, not just the <thead> */
+.table-header-formatting th {
+    background-color: ivory;
+    color: purple;
+}
+
+/* hover effect on table td - remember this table is all cells not rows! */
+.table-formatting td:hover {
+    background-color: pink;  
+}
+
+.button-purple {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.delete-button{
+    color:red;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.like-button {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.like-button:hover {
+    color: pink;
+    cursor: pointer;
+}
+

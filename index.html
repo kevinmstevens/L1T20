@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>LT20-capstone</title>
+
+    <!-- bootstrap styles, this is for the layout-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css" />
+    <link rel="stylesheet" href="assets/css/Testimonials-Centered-images.css" />
+    <!-- my own SCSS-->
+    <link rel="stylesheet" href="assets/css/redoneSCSS.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:bold,bolditalic|Shadows Into Light|Caveat|Roboto|Special Elite"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- the html checker does not like the | symbol in line 12 but got the code from googlefonts.  Is this actually an error??
+fixed the errors on all the pages 9 july 2023-->
+
+  <!-- NOTES -->
+  <!-- I built this using Bootstrap Studio but I have done a lot of editing to practice html.
+    I think in the future it'll be quicker to code the html directly, now that I have some knowledge about containers and rows / columns.
+    I would do the fiddly layout in Boostrap and get the pre-built components but edit them in VSCode.
+    I managed to do the carousel I had tried to replicate in the last exercise which I had discussed with Layne. 
+
+    Got the images from unsplash and learned how to get Google Fonts.  Colour palette from Canva.  I am developing an interest in fonts.-->
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">What To Eat?</a
+          ><button
+            data-bs-toggle="collapse"
+            class="navbar-toggler"
+            data-bs-target="#navcol-1"
+          >
+            <span class="visually-hidden">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav">
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <a class="nav-link link-text navbar-font" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-text navbar-font" href="menus.html"
+                  >Menus</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-text navbar-font" href="mealPlan.html"
+                  >Meal Plan</a
+                >
+              </li>
+ <!-- new...dropdown in nav bar, based on previous task.  Have used css for glow effect and superscript text to 
+emphasise the new parts I've developed since LT15-->             
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle link-text navbar-font"
+                  href="#"
+                  id="recipesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  
+                >
+                  Recipes<sup class="superscript glow">New</sup>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item navbar-font" href="recipes.html"
+                      >All recipes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item navbar-font" href="recipe-1.html"
+                      >Green stir-fry</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item navbar-font" href="recipe-2.html"
+                      >Charred pak choi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item navbar-font" href="recipe-3.html"
+                      >Smoked mackerel</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item navbar-font" href="recipe-4.html"
+                      >Aubergine pahi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-text navbar-font"
+                  href="recipes-allCards.html"
+                  >Recipe Cards<sup class="superscript glow">New</sup></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-text navbar-font" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-text navbar-font"
+                  href="save-for-later.html"
+                  >My Folder<sup class="superscript glow">New</sup></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="py-4 py-xl-5">
+        <div class="container">
+          <div
+            class="border rounded border-9 d-flex flex-column justify-content-center align-items-center p-4 py-5"
+            style="
+              background: linear-gradient(
+                  rgba(0, 123, 255, 0.2),
+                  rgba(0, 123, 255, 0.2)
+                ),
+                url(assets/img//dinner.jpg) center / cover;
+              height: 500px;
+            "
+          >
+            <div class="border rounded border-9 row p-background-2nd-light">
+              <div
+                class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center"
+              >
+                <div>
+                  <h1 class="text-uppercase fw-bold mb-3 h2 py-2">
+                    What's for dinner?
+                  </h1>
+                  <h2 class="mb-4 h5">
+                    Not organised? Too busy to decide what to eat?&nbsp; Help is
+                    here!
+                  </h2>
+                  <a
+                    class="btn btn-primary fs-5 me-2 py-2 px-4 button-teal"
+                    role="button"
+                    href="recipes.html"
+                  >
+                    Menus</a
+                  ><br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+          <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h3 class="h3 p-background-2nd-light">
+              We have thousands of recipes
+            </h3>
+            <p class="w-lg-50 h5 p-background-2nd-light">
+              From all over the world
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is the section to put the carousel in-->
+      <!-- I put this in myself in VSCode.  code from  https://stackoverflow.com/questions/62572072/bootstrap-4-carousel-text-left-image-right 
+to do: if the window is smaller than 1008px wide, the text in the carousel is cut off , but on the plus side we can see the curve on the bottom left of the image that i wanted!
+Needs more work.
+Learned how to see the width of the page using Chrome developer tools-->
+
+      <section class="">
+        <div class="container">
+          <div
+            id="myCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="row align-items-center justify-content-center text-center"
+                >
+                  <div class="col-md py-2">
+                    <h1 class="h1-carousel custom-text-position1">
+                      Delicious recipes
+                    </h1>
+                    <p class="h2-carousel custom-text-position2">
+                      Quick Roast Chicken!
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-lg button-teal py-2 custom-button-position"
+                      >Sign up today</a
+                    >
+                  </div>
+                  <div class="col-md py-0">
+                    <img
+                      class="d-block img-fluid img"
+                      src="assets/img//slide-11.jpg"
+                      alt="Image of a roast chicken"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="row align-items-center justify-content-center text-center"
+                >
+                  <div class="col-md py-2">
+                    <h1 class="h1-carousel custom-text-position1">
+                      Scrumptious recipes
+                    </h1>
+                    <p class="h2-carousel custom-text-position2">
+                      Savory Salads
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-lg button-teal py-2 custom-button-position"
+                      >Sign up today</a
+                    >
+                  </div>
+                  <div class="col-md py-0">
+                    <img
+                      class="d-block img-fluid imagewidth imagecurved"
+                      src="assets/img//slide-12.jpg"
+                      alt="Image of a salad"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="row align-items-center justify-content-center text-center"
+                >
+                  <div class="col-md py-2">
+                    <h1 class="h1-carousel custom-text-position1">
+                      Tasty recipes
+                    </h1>
+                    <p class="h2-carousel custom-text-position2">
+                      Mouthwatering beef steak
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-lg button-teal py-2 custom-button-position"
+                      >Sign up today</a
+                    >
+                  </div>
+                  <div class="col-md py-0">
+                    <img
+                      class="d-block img-fluid imagewidth"
+                      src="assets/img//slide-13.jpg"
+                      alt="Image of a steak"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of new section-->
+
+      <!-- used fontawesome icons - found them in bootstrap studio.  Would it be better to download these locally?-->
+    </div>
+    <div class="container py-4 py-xl-5">
+      <div class="row mb-5">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <h2 class="h2 p-background-2nd-light">What to eat tonight?</h2>
+          <p class="w-lg-50 h5 p-background-2nd-light">
+            It can be overwhelming to decide what to eat for dinner.&nbsp; I
+            have a curated collection of recipes to make my life easier and I
+            want to share these with you!
+          </p>
+        </div>
+      </div>
+      <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div class="col">
+          <div class="card">
+            <div class="card-body p-4">
+              <div
+                class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                style="background: #f6c8cc"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                >
+                  <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM256 336c-18 0-32 14-32 32s13.1 32 32 32c17.1 0 32-14 32-32S273.1 336 256 336zM289.1 128h-51.1C199 128 168 159 168 198c0 13 11 24 24 24s24-11 24-24C216 186 225.1 176 237.1 176h51.1C301.1 176 312 186 312 198c0 8-4 14.1-11 18.1L244 251C236 256 232 264 232 272V288c0 13 11 24 24 24S280 301 280 288V286l45.1-28c21-13 34-36 34-60C360 159 329 128 289.1 128z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="h4-card-title">What do I want to eat?</h4>
+              <p class="h5-card-text">
+                My carefully curated recipes cover all food groups <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body p-4">
+              <div
+                class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                style="background: #f6c8cc"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                >
+                  <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="h4-card-title">What is my energy level?</h4>
+              <p class="h5-card-text">
+                Only want to boil an egg?&nbsp; I have recipes to suit your
+                level.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body p-4">
+              <div
+                class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                style="background: #f6c8cc"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                >
+                  <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M232 120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120V243.2L365.3 300C376.3 307.4 379.3 322.3 371.1 333.3C364.6 344.3 349.7 347.3 338.7 339.1L242.7 275.1C236 271.5 232 264 232 255.1L232 120zM256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0zM48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48C141.1 48 48 141.1 48 256z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="h4-card-title">How much time do I have?</h4>
+              <p class="h5-card-text">
+                5 mins?&nbsp; 2 hours?&nbsp; I cover it!&nbsp;<br /><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial section, used Bootstrap studio element and I used my own styles.  Todo: the images are squeezed into the circles, need to examine this class and use on menus page-->
+    <div class="container py-4 py-xl-5">
+      <div class="row mb-5">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <h2 class="h3">Testimonials</h2>
+        </div>
+      </div>
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <div class="col">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="text-center testimonial-text blockquote">
+              Amazing.&nbsp; I was so indecisive, now i don't have to worry
+              about anything.
+            </p>
+            <div class="d-flex">
+              <img
+                class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                width="50"
+                height="50"
+                src="assets/img//testimonial-1.jpg"
+                alt="Image of person's face"
+              />
+              <div>
+                <p class="fw-bold mb-0 p-name testimonial-name">John Smith</p>
+                <p class="text-muted mb-0 testimonial-country">England</p>
+              </div>
+            </div>
+            <div class="card border-0 shadow-none">
+              <div class="card-body d-flex align-items-center p-0"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="text-center testimonial-text blockquote">
+              How did I manage before?<br /><br />
+            </p>
+            <div class="d-flex">
+              <img
+                class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                width="50"
+                height="50"
+                src="assets/img//testimonial-2.jpg"
+                alt="Image of person's face"
+              />
+              <div>
+                <p class="fw-bold mb-0 p-name testimonial-name">Jane Smith</p>
+                <p class="text-muted mb-0 testimonial-country">Scotland</p>
+              </div>
+            </div>
+            <div class="card border-0 shadow-none">
+              <div class="card-body d-flex align-items-center p-0"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="text-center testimonial-text blockquote">
+              A solution looking for a problem!<br /><br />
+            </p>
+            <div class="d-flex">
+              <img
+                class="rounded-circle flex-shrink-0 me-3 fit-cover"
+                width="50"
+                height="50"
+                src="assets/img//testimonial-3.jpg"
+                alt="Image of person's face"
+              />
+              <div>
+                <p class="fw-bold mb-0 p-name testimonial-name">Amanda Smith</p>
+                <p class="text-muted mb-0 testimonial-country">Ireland</p>
+              </div>
+            </div>
+            <div class="card border-0 shadow-none">
+              <div class="card-body d-flex align-items-center p-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="py-4 py-xl-5">
+        <div class="container">
+          <div
+            class="text-dark border p-background-2nd-light rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5"
+            data-bs-theme="light"
+          >
+            <div class="text-center text-lg-start py-3 py-lg-1">
+              <h2 class="h5"><strong>Subscribe to our newsletter</strong></h2>
+              <p class="mb-0 p-subscription">You won't regret it</p>
+            </div>
+            <form
+              class="d-flex justify-content-center flex-wrap my-2"
+              method="post"
+            >
+              <div class="my-2">
+                <input
+                  class="form-control form-text"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="my-2">
+                <button
+                  class="btn btn-primary ms-sm-2 button-teal"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <footer class="text-center">
+          <div class="container text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+              <li class="list-inline-item me-4"></li>
+              <li class="list-inline-item me-4"></li>
+              <li class="list-inline-item"></li>
+            </ul>
+            <ul class="list-inline">
+              <li class="list-inline-item me-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-facebook"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="list-inline-item me-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-twitter"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="list-inline-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-instagram"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+            <p class="mb-0 footer-text">Copyright © 2023 Kevin</p>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main-1.js"></script>
+
+    <script src="assets/js/main-2.js"></script>
+  </body>
+</html>

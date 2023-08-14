@@ -1,0 +1,275 @@
+.h1 {
+  font-family: inconsolata, sans-serif;
+  font-size: 40px;
+  color: black;
+}
+
+.h2 {
+  font-family: inconsolata, sans-serif;
+  font-size: 36px;
+  color: black;
+}
+
+.h3 {
+  font-family: inconsolata, sans-serif;
+  font-size: 34px;
+  color: black;
+}
+
+.h4 {
+  font-family: inconsolata, sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+.h5 {
+  font-family: inconsolata, sans-serif;
+  font-size: 30px;
+  color: black;
+}
+
+.superscript {
+  font-family: caveat, sans-serif;
+  font-size: 17.5pt;
+  color: rgb(230, 102, 52);
+}
+
+.button-teal {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: inconsolata, sans-serif;
+}
+
+.button-teal:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: inconsolata, sans-serif;
+}
+
+.submit-button:hover {
+  background-color: orchid;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-family: caveat, sans-serif;
+  font-size: 25px;
+}
+
+.navbar-font {
+  font-family: caveat, sans-serif;
+  font-size: 20px;
+}
+
+.p-background-2nd-light {
+  background-color: ivory;
+  opacity: 0.8;
+}
+
+.p-background-lightest {
+  background-color: #F6C8CC;
+}
+
+.p-background-lightest-grey {
+  background-color: lightgray;
+}
+
+.p-smallprint {
+  font-family: inconsolata, sans-serif;
+  font-size: 4pt;
+}
+
+/*carousel */
+.h1-carousel {
+  font-family: tangerine, sans-serif;
+  font-size: 80px;
+  color: #C15B78;
+}
+
+.h2-carousel {
+  font-family: tangerine, sans-serif;
+  font-size: 50px;
+  color: #C15B78;
+}
+
+/* for the carousel - found this on various internet pages when trying to get it to work */
+.carousel-format, .carousel-item {
+  background: #EBF5F7;
+  color: white;
+}
+
+.carousel-item {
+  height: 32rem;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 40px;
+  overflow: hidden !important;
+}
+
+/*setting the style for the carousel indicators */
+.carousel-indicators {
+  list-style-type: none;
+}
+
+.carousel-indicators li {
+  text-indent: 0;
+}
+
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 40px !important;
+}
+
+/*i have set the bottom left corner of the image to be round.  It does not work when viewing the webpage.  Hoewver, when "Inspecting" the webpage the curve shows!  So not quite what i intended but 'good enough' for now! */
+.imagewidth {
+  width: 100%;
+}
+
+.custom-text-position1 {
+  top: -150px;
+  position: relative;
+}
+
+.custom-text-position2 {
+  top: -120px;
+  position: relative;
+}
+
+.custom-button-position {
+  top: -80px;
+  position: relative;
+}
+
+/* end of carousel formatting */
+/*This font has a particular energy to it */
+/*css checker advises that family names with whitespace should be quoted, have changed*/
+.h4-card-title {
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+
+.h5-card-text {
+  font-family: inconsolata, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.testimonial-text {
+  font-family: caveat, sans-serif;
+  font-size: 26px;
+  color: #5BB0BA;
+}
+
+.testimonial-name {
+  font-family: inconsolata, sans-serif;
+  color: #C15B78;
+}
+
+.testimonial-country {
+  font-family: inconsolata, sans-serif;
+  color: black;
+}
+
+.p-subscription {
+  font-family: inconsolata, sans-serif;
+  color: black;
+}
+
+.footer-text {
+  font-family: inconsolata, sans-serif;
+}
+
+.hero2 {
+  background-color: ivory;
+}
+
+.bullets-text {
+  font-family: caveat, sans-serif;
+  font-size: 25px;
+}
+
+/*The Special Elite font replicates an old typewriter, which is a good effect for the table. */
+.table-formatting {
+  font-family: "Special Elite", sans-serif;
+  font-size: 14pt;
+}
+
+/*using an operator to make the header row larger*/
+.table-header-formatting {
+  font-family: "Special Elite", sans-serif;
+  font-size: 22pt;
+}
+
+.external-link-text {
+  font-family: roboto;
+  color: #C15B78;
+  font-size: 16px;
+}
+
+.recipe-text {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 14pt;
+  color: black;
+}
+
+.recipe-card-header {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 16pt;
+  color: black;
+}
+
+.smallprint-box {
+  width: 200px;
+  padding: 10px 1px;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 5pt;
+  text-align: center;
+  background: #aaccaa;
+  border: 1px solid #63a063;
+  box-sizing: border-box;
+}
+
+/* Enlargeable and enlarged styles for the chaining to make the smallorint box bigger, and toggle-able
+*/
+.enlargeable {
+  width: 200px;
+  padding: 10px 1px;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 5pt;
+  text-align: center;
+  background: #aaccaa;
+  border: 1px solid #63a063;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enlargeable.enlarged {
+  width: 100%;
+  font-size: 46px;
+  border-width: 30px;
+}/*# sourceMappingURL=redoneSCSS.css.map */
