@@ -6,7 +6,7 @@
 
 ## Description
 
-A simple website for an imaginary business which makes menu recommendations
+A simple website for an imaginary business which makes menu recommendations.
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ The key explanation being:
 
 >For the rendered view of any Markdown file in a repository, including README files, GitHub will automatically generate a table of contents based on section headings. You can view the table of contents for a README file by clicking the  menu icon at the top left of the rendered page.
 
-1. Getting Starteed
+1. Getting Started
 2. Dependencies
 3. Installing
 4. Executing program
@@ -24,6 +24,8 @@ The key explanation being:
    
 ## Getting Started
 
+* To view the website, visit this [link](https://kevinmstevens.github.io/L1T20/index.html).
+  
 ### Dependencies
 
 * none
@@ -36,7 +38,7 @@ The key explanation being:
 
 ### Usage
 
-* To view the website, visit this [link]
+* To view the website, visit this [link](https://kevinmstevens.github.io/L1T20/index.html).
 
 #### Screenshots
 
@@ -51,17 +53,17 @@ Each recipe is available as a recipe card:
 
 ## Help
 
-Any advise for common problems or issues.
+Any advice for common problems or issues.
 ```
 command to run if program contains helper info
 ```
 
 ## Authors
 
-Contributors names and contact info
+Contributors names and contact info:
 
-ex. Kevin Stevens
-ex. kevin.65536@gmail.com
+* Kevin Stevens
+* Email: kevin.65536@gmail.com
 
 ## Version History
 
@@ -72,8 +74,8 @@ ex. kevin.65536@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+* n/a
+  
+## Credits
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
+* With thanks to the guidance provided by Hyperion.
