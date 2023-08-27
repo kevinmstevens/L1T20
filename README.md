@@ -12,8 +12,16 @@ A simple website for an imaginary business which makes menu recommendations
 
 The table of contents is automatically generated [click here for instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
+The key explanation being:
+
 >For the rendered view of any Markdown file in a repository, including README files, GitHub will automatically generate a table of contents based on section headings. You can view the table of contents for a README file by clicking the  menu icon at the top left of the rendered page.
 
+1. Getting Starteed
+2. Dependencies
+3. Installing
+4. Executing program
+5. Screenshots
+   
 ## Getting Started
 
 ### Dependencies
@@ -22,25 +30,25 @@ The table of contents is automatically generated [click here for instructions](h
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* This section explains how to download the project locally.
 
-### Executing program
+* To download the project locally, clone the repository from Github.  Follow the instructions [click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Usage
 
-### Screenshots
+* To view the website, visit this [link]
 
+#### Screenshots
 
+This is the main page of the website:
 ![Main Page Screenshot](assets/screenshots/Screenshot-main%20page.png)
 
-![Recipe card Page Screenshot](assets/screenshots/Screenshot-recipes.png)
+The recipes are summarised here:
+![Recipe Page Screenshot](assets/screenshots/Screenshot-recipes.png)
 
+Each recipe is available as a recipe card:
 ![Recipes Page Screenshot](assets/screenshots/Screenshot-recipe%20card.png)
+
 ## Help
 
 Any advise for common problems or issues.
