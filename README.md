@@ -10,7 +10,10 @@ A simple website for an imaginary business which makes menu recommendations
 
 ## Table of contents
 
-The table of contents is automatically generated [click here for instructions](
+The table of contents is automatically generated [click here for instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+
+>For the rendered view of any Markdown file in a repository, including README files, GitHub will automatically generate a table of contents based on section headings. You can view the table of contents for a README file by clicking the  menu icon at the top left of the rendered page.
+
 ## Getting Started
 
 ### Dependencies
@@ -33,7 +36,11 @@ code blocks for commands
 ### Screenshots
 
 
-(/assets/screenshots/Screenshot-main%20page.png)
+![Main Page Screenshot](assets/screenshots/Screenshot-main%20page.png)
+
+![Recipe card Page Screenshot](assets/screenshots/Screenshot-recipes.png)
+
+![Recipes Page Screenshot](assets/screenshots/Screenshot-recipe%20card.png)
 ## Help
 
 Any advise for common problems or issues.
