@@ -1,10 +1,16 @@
-# Project Title
+# Project Title: My first website
 
-My first web project
+## Description of project: This is my first attempt at designing a website with some functionality.
+<br>The importance of this project is around this being an opportunity to develop my skills and receive feedback.
+<br>What does this project do? The website is for an imagery service which organises your menu planning.
 
 ## Description
 
 A simple website for an imaginary business which makes menu recommendations
+
+## Table of contents
+
+The table of contents is automatically generated [click here for instructions](
 ## Getting Started
 
 ### Dependencies
@@ -23,6 +29,10 @@ A simple website for an imaginary business which makes menu recommendations
 ```
 code blocks for commands
 ```
+
+### Screenshots
+
+![ScreenShot](assets/screenshots/Screenshot-main page.png)
 
 ## Help
 
