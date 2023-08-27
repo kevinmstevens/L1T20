@@ -32,8 +32,8 @@ code blocks for commands
 
 ### Screenshots
 
-![ScreenShot](assets/screenshots/Screenshot-main page.png)
 
+(/assets/screenshots/Screenshot-main%20page.png)
 ## Help
 
 Any advise for common problems or issues.
